@@ -129,7 +129,7 @@ Game.prototype.update = function(){
 Game.prototype.score = function(p){
 // Increment when a player scores
 	p.score++;
-
+// Ternary to determine if player 1 or 2
 	var player = p == this.p1 ? 0 : 1;
 // Set the position of the ball after a player scores
 	this.ball.x = this.width/2;
