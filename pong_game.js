@@ -63,6 +63,12 @@ Game.prototype.update = function(){
 // Update the player's score
 	this.display1.value = this.p1.score;
 	this.display2.value = this.p2.score;
+// Check to see if someone won
+	if (this.p1.score == 10) {
+		alert("Player 1 Wins");
+	} else if (this.p2.score == 10){
+		alert("Player 2 Wins");
+	}
 // Control Player 1 
 	if (this.keys.isPressed(83)) { // Down
 		this.p1.y = Math.min(this.height - this.p1.height, this.p1.y + 6);
