@@ -1,3 +1,4 @@
+$(document).ready(function(){
 
 function Player(x,y){
 	this.x = x;
@@ -13,7 +14,7 @@ Player.prototype.draw = function(p){
 
 function Game(){
 // set the canvvas to a variable
-	var game_canvas = document.getElementById("game");
+	var game_canvas = $("#game")[0];
 // Set the dimensions of the canvas to the size of the window.
 	this.width = game_canvas.width;
 	this.height = game_canvas.height;
@@ -208,3 +209,4 @@ function MainLoop(){
 }
 // Start the game
 MainLoop();
+});
